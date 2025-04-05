@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="É totalmente gratuito e sem anúncios! Assista aos melhores jogos ao vivo, incluindo o Campeonato Brasileiro, Copa do Brasil, Copa Sul-Americana, Libertadores 2025 e muito mais, com sinais de TV online de alta qualidade!">
+    <title>Fut Na Tela</title>
+
+    <!-- Favicon (Ícone da aba do navegador) -->
+    <link rel="icon" href="iconefutnatela.png" type="image/x-icon">
+
+    <!-- Links para fontes do Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Links para ícones do Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Inclui o CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="logo">
+            <a href="#" class="custom-logo-link" rel="home">
+                <img src="FUTNATELALOGO.png" class="custom-logo" alt="supertvaovivo-logo">
+            </a>
+        </div>
+    </header>
+
+    <!-- Caixa de mensagem de boas-vindas -->
+    <div id="welcomeMessage" class="welcome-message">
+        <p>Atenção: Transmissão ao vivo apenas 40 minutos antes dos jogos desejado para assistir.</p>
+        <button onclick="closeMessage()">Fechar</button>
+    </div>
+
+    <!-- Conteúdo Principal -->
+    <main>
+        <section class="content-post">
+            <article>
+                <h1>Vitória x Flamengo</h1>
+                <h2>Brasileirão (06/04 - 18:30)</h2>
+                <div class="player-channel">
+                    <!-- Imagem do player (capa inicial) -->
+                    <div class="player-cover" id="playerCover">
+                        <img src="https://i.ytimg.com/vi/DKQLnoxw2ys/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLC4Slp6PoyNZigsUdb8dCiphzx9Qw" alt="Capa do Vídeo">
+                    </div>
+
+                    <!-- Player de vídeo que ficará oculto inicialmente -->
+                    <iframe id="videoPlayer" src="" allowfullscreen allow="encrypted-media" style="display:none;"></iframe>
+
+                    <hr>
+
+                    <div class="button-sinals">
+                        <!-- Botões para alterar o vídeo do player -->
+                        <button value="https://embedcanaistv.com/premiereclubes/" onclick="playVideo('https://embedcanaistv.com/premiereclubes/')">Sinal 1</button>
+                        <button value="https://la12hd.com/vivo/canal.php?stream=sporttv2" onclick="playVideo('https://la12hd.com/vivo/canal.php?stream=sporttv2')">Sinal 2</button>
+                    </div>
+                </div>
+                <h2>Siga nosso perfil para nos ajudar continuar trazer partidas online, sem anúncios e sem custo. Site compatível com todos os dispositivos!</h2>
+            </article>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2025 Fut NA TELA ao Vivo - Todos os direitos reservados.</p>
+        <div class="footer-icons">
+            <a href="https://t.me/+1UueLQgAKHY2NzAx" target="_blank">
+                <i class="fab fa-telegram"></i>
+            </a>
+            <a href="https://www.instagram.com/futnatela_aovivo?igsh=cnd0enU2eDIwemZy" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+    </footer>
+
+    <!-- Inclui o Script -->
+    <script src="script.js"></script>
+</body>
+
+</html>
