@@ -24,7 +24,7 @@ header {
 
 .logo img {
     width: 100%;
-    max-width: 150px;
+    max-width: 200px;
     height: auto;
 }
 
@@ -114,8 +114,9 @@ footer .footer-icons a {
 footer .footer-icons a:hover {
     color: var(--cor-vermelha);
 }
- /* Estilo para a caixa de mensagem */
- .welcome-message {
+
+/* Estilo para a caixa de mensagem */
+.welcome-message {
     position: fixed;
     top: 20%;
     left: 50%;
@@ -172,6 +173,7 @@ footer .footer-icons a:hover {
     }
 }
 
+/* Responsividade para dispositivos móveis */
 @media (max-width: 768px) {
     .content-post h1 {
         font-size: 28px;
@@ -190,11 +192,15 @@ footer .footer-icons a:hover {
         padding: 8px 15px;
     }
 
-    .social-icons a {
+    .footer-icons a {
         font-size: 25px;
     }
 
     footer .footer-icons a {
         font-size: 20px;
+    }
+
+    .logo img {
+        max-width: 120px;
     }
 }
